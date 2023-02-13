@@ -1,3 +1,4 @@
+import { Hint } from "@skbkontur/react-ui";
 import { useQuery } from "@tanstack/react-query";
 import { FC, PropsWithChildren, useRef } from "react";
 import { CoinService } from "../../../../services/coinService/coin.service";
@@ -22,7 +23,9 @@ const MarketsPage:FC<PropsWithChildren> = () => {
                     <hr className={styles.line}/>
                 </center>
                 <section className={styles.cap}>
-                    <h3 className={styles.marketcap}>DeFi капитализация</h3>
+                    <Hint text=' DeFi — это финансовые инструменты в виде сервисов и приложений, созданных на блокчейне. Это современная альтернатива банковскому сектору. DeFi успешно заменяют традиционные технологии финансовой системы протоколами с открытым исходным кодом.'>
+                        <h3 className={styles.marketcap}>DeFi капитализация ?</h3>
+                    </Hint>
                     {
                         defiQuery.isLoading ? <LoadingBox/> :
                         defiQuery.data?.data ? <DeFiWidget market_cap={defiQuery.data?.data.data.defi_market_cap}/> :

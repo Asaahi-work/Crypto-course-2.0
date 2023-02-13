@@ -4,6 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 import React, { useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import { CoinService } from '../../../../../../services/coinService/coin.service';
+import './tradingview.scss';
 
 let tvScriptLoadingPromise;
 
@@ -42,8 +43,7 @@ export default function TradingViewWidget() {
             console.log(data)
             if (document.getElementById('tradingview_ba2dd') && 'TradingView' in window) {
               new window.TradingView.widget({
-                width: 1400,
-                height: 680,
+                autosize: true,
                 symbol: `${data.data[0].symbol.toUpperCase()}USDT`,
                 interval: "D",
                 timezone: "Etc/UTC",

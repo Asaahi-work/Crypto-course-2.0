@@ -20,11 +20,12 @@
 @media screen and (max-width:620px) {
     .coin {
         max-width: 600px;
-        @apply flex-column rounded-md text-left; 
+        @apply ml-1 flex-column rounded-md text-left;
+        align-items: flex-start; 
     }
     p {
-        margin: 0 auto;
-        @apply text-left;
+        @apply ml-2 text-left;
+        align-items: flex-start;
     }
 }
 

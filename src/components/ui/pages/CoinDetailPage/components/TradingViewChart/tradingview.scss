@@ -1,0 +1,11 @@
+#tradingview_ba2dd {
+    height: 680px;
+}
+
+@media screen and (max-width:768px) {
+    #tradingview_ba2dd {
+        max-width: 100%;
+        @apply ml-2 mr-2;
+        height: 600px;
+    }
+}
