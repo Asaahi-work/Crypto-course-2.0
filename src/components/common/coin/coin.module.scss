@@ -1,0 +1,53 @@
+.coin {
+    max-width: 1380px;
+    height: 70px;
+    border: solid 1px;
+    @apply ml-2 mr-2 cursor-pointer border-widgetColor mt-4 bg-widgetColor rounded-full flex-center-between;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.6s;
+    p {
+        transition: 0.6s;
+    }
+
+    &:hover {
+        @apply border-primary;
+        .name {
+            @apply text-primary;
+        }
+    }
+}
+
+@media screen and (max-width:620px) {
+    .coin {
+        max-width: 600px;
+        @apply flex-column rounded-md text-left; 
+    }
+    p {
+        margin: 0 auto;
+        @apply text-left;
+    }
+}
+
+.image {
+    @apply rounded-full ml-2;
+}
+
+.marketCap {
+    @apply mr-4;
+
+    span {
+        @apply text-primary;
+    }
+}
+
+.symbol {
+    color: #ccc;
+}
+
+.price__up {
+    @apply text-greenPrice;
+}
+
+.price__down {
+    @apply text-red-400;
+}

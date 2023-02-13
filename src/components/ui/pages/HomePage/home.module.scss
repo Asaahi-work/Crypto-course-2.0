@@ -1,0 +1,99 @@
+.main {
+    margin: 0 auto;
+    max-width: 1400px;
+    @apply text-white;
+    min-height: 849px;
+}
+
+@media screen and (max-width: 1200px) {
+    .main {
+        max-width: 100%;
+    }
+}
+
+.title {
+    @apply pl-1 pt-12 text-left text-xl;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.price {
+    @apply text-greenPrice;
+}
+
+.priceChange {
+    @apply text-greenPrice
+}
+
+.currency {
+    color: #ccc;
+}
+
+.graphic {
+    height: 400px;
+    width: 1360px;
+    @apply bg-widgetColor rounded-xl mt-5 ml-2 mr-2;
+}
+
+@media screen and (max-width:1380px) {
+    .graphic {
+        max-width: 90%;
+
+    }    
+}
+
+
+.categoryContainer {
+    @apply flex-center-between;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 450px;
+}
+
+.category {
+    width: 200px;
+    height: 30px;
+    border: 1px;
+    @apply cursor-pointer border-solid text-center border-widgetColor pt-0.5 rounded-full ml-1 mt-2 bg-widgetColor;
+    transition: 0.6s;
+
+    &:hover {
+        @apply border-primary;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .categoryContainer {
+        @apply flex-column;
+    }
+    .category {
+        @apply mr-6;
+        width: 90%;
+    }
+}
+
+.cc {
+    @apply pl-1 pt-12 text-center text-xl;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btnContainer {
+    @apply ml-2 mt-2;
+}
+
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    border-width: 1px;
+    @apply mr-3 bg-widgetColor rounded-xl border-solid border-widgetColor;
+    width: 80px;
+    transition: 0.6s;
+    &:hover {
+        @apply border-primary;
+    }
+}
+
+.hint {
+    cursor: pointer;
+}
+

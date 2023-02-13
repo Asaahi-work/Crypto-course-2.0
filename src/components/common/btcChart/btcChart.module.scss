@@ -1,0 +1,15 @@
+.chart {
+    width: 1360px;
+    height: 680px;
+    @apply bg-widgetColor rounded-xl mt-5 mr-2 ml-2;
+    canvas {
+        @apply p-2;
+    }
+}
+
+@media screen and (max-width:1380px) {
+    .chart {
+        max-width: 96%;
+        height: 150px;
+    }    
+}

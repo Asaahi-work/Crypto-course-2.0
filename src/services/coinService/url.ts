@@ -1,0 +1,1 @@
+export const URL = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,dash,solana,tron,ripple,tether,binancecoin,cardano,matic-network,near,okb,polkadot,litecoin,shiba-inu,dai,avalanche-2,1inch,btse-token,xdce-crowd-sale,ethereum-pow-iou,zilliqa,gmx,arweave,nexo,immutable-x,radix'

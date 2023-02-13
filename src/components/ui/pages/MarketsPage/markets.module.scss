@@ -1,0 +1,50 @@
+.market {
+    margin: 0 auto;
+    max-width: 1400px;
+    @apply text-white;
+    min-height: 740px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .market {
+        max-width: 100%;
+    }
+}
+
+.title {
+    @apply pt-12 text-center text-xl;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.marketcap {
+    @apply ml-2 pt-12 text-left text-tiny;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes line {
+    from {
+        width: 0%;
+    } to {
+        width: 28%;
+    }
+}
+
+.line {
+    width: 28%;
+    animation: line ease-in-out 1.5s alternate;
+}
+
+
+.heading {
+    @apply pt-12 text-center text-tiny;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.headingLine {
+    width: 10%;
+}
+
+.coinlist {
+    @apply mt-7 flex-column; 
+}

@@ -1,0 +1,49 @@
+.widget {
+    width: 360px;
+    height: 60px;
+    border: 1px;
+    transition: 0.6s;
+    @apply cursor-pointer border-solid border-widgetColor rounded-full ml-1 mt-2 flex-center-between bg-widgetColor;
+    
+    h3 {
+        @apply text-sm pl-2;
+    }
+
+    p {
+        @apply mr-3 ml-3;
+    }
+
+    &:hover {
+        @apply border-primary;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .widget {
+        max-width: 93%;
+    }
+}
+
+.price {
+    @apply text-greenPrice;
+}
+
+.priceChange {
+    @apply text-greenPrice
+}
+
+.price__up {
+    @apply text-greenPrice;
+}
+
+.price__down {
+    @apply text-red-400;
+}
+
+.currency {
+    color: #ccc;
+}
+
+.image {
+    @apply rounded-full ml-3;
+}

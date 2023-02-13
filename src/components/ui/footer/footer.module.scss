@@ -1,0 +1,19 @@
+@keyframes switch {
+    from {
+            border-color: #ccc;
+    } to {
+            @apply border-primary;
+    }
+}
+
+.footer {
+    @apply mt-14 text-white;
+    border-top: 1px solid rgb(120, 120, 120);
+    height: 50px;
+    animation: switch 3s infinite alternate slidein;
+}
+
+.footerText {
+    @apply text-center pt-4;
+    font-family: 'Montserrat', sans-serif;
+}

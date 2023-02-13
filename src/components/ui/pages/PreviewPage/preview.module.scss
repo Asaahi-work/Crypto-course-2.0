@@ -1,0 +1,128 @@
+@media (max-width:375px) {
+    .img {
+        @apply max-w-full;
+    }
+}
+
+
+@media screen and (max-width:1280px) {
+    .previewContainer {
+       max-width:100%;
+    }
+}
+
+
+@media screen and (max-width:375px) {
+    .previewContainer {
+       max-width:100%;
+    }
+
+}
+
+@media  screen and (max-width:1280px){
+    .widgetblock{
+        max-width: 1200px;
+    }
+}
+
+@media  screen and (max-width:760px){
+    .widgetblock{
+        max-width: 550px;
+    }
+}
+
+@media  screen and (max-width:575px){
+    .widgetblock{
+        max-width: 550px;
+        @apply flex-column;
+    }
+    .widgetitem {
+        width: 325px !important;
+        @apply mt-3;
+    }
+}
+
+
+
+
+
+.preview {
+    @apply text-white flex-column flex-wrap mt-44;
+    max-width: 100%;
+    overflow: hidden;
+    align-content: center;
+}
+
+.title {
+    @apply text-center text-5xl;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+.text {
+    @apply text-center text-xs;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.start {
+    @apply mt-10;
+}
+.btn {
+    @apply text-center text-xs;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.6s;
+    &:hover {
+        @apply text-primary;
+    }
+}
+
+
+.widgetblock {
+    @apply flex-center-between mt-16 mb-5;
+    max-width: 1280px;
+}
+
+.widgetitem {
+    cursor: pointer;
+    @apply bg-widgetColor flex-center-between rounded-full border-solid border-widgetColor mb-2;
+    border-width: 1px;
+    height: 70px;
+    width: 260px;
+    font-family: 'Nanum Gothic', sans-serif;
+    transition: 0.6s;
+    &:hover {
+        @apply border-primary;
+        .name {
+            @apply text-primary;
+        }
+    }
+}
+
+.symbol {
+    @apply ml-3 rounded-full;
+}
+
+.name {
+    @apply ml-2;
+    transition: 0.6s;
+}
+
+.price {
+    @apply ml-2 mr-2 text-red-400;
+}
+
+.currency {
+    @apply mr-2;
+}
+
+.price__up {
+    @apply text-greenPrice;
+}
+
+.price__down {
+    @apply text-red-400;
+}
+
+.red {
+    color:red;
+}
