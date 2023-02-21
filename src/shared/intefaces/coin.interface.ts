@@ -17,7 +17,7 @@ export interface ICoinDetail extends ICoin {
 
 
 export interface ICoinChart {
-        prices: [number[], number[]]
-        market_caps?: []
-        total_volumes?: []
+    prices: [number[], number[]]
+    market_caps?: []
+    total_volumes?: []
 }
